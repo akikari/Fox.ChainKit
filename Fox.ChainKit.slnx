@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/sampes/">
+    <Project Path="samples/Fox.ChainKit.Demo/Fox.ChainKit.Demo.csproj" Id="accf88f2-fae4-4802-b6f9-3bac1bc8a023" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Fox.ChainKit.ResultKit/Fox.ChainKit.ResultKit.csproj" Id="1586d12e-35f0-4e02-884b-11beb9c6b48e" />
+    <Project Path="src/Fox.ChainKit/Fox.ChainKit.csproj" Id="40d10088-d6b9-47a9-82c2-e8c409d26bdd" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Fox.ChainKit.ResultKit.Tests/Fox.ChainKit.ResultKit.Tests.csproj" Id="d8e40c26-6416-412f-88c6-4670bece8fb1" />
+    <Project Path="tests/Fox.ChainKit.Tests/Fox.ChainKit.Tests.csproj" Id="c02dfbbf-adfb-4495-993e-c4a3da78dc46" />
+  </Folder>
+</Solution>

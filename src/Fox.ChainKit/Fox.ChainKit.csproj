@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+      <Version>1.0.0</Version>
+      <IsPackable>true</IsPackable>
+      <AssemblyName>Fox.ChainKit</AssemblyName>
+      <RootNamespace>Fox.ChainKit</RootNamespace>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <LangVersion>latest</LangVersion>
+
+      <PackageId>Fox.ChainKit</PackageId>
+      <Authors>Károly Akácz</Authors>
+      <Company>Fox</Company>
+      <Product>Fox.ChainKit</Product>
+      <Description>A lightweight, efficient, and flexible Chain of Responsibility pattern implementation for .NET. Features include: fluent builder API, built-in diagnostics, zero reflection overhead, dependency injection support, and optional Result pattern integration.</Description>
+      <Copyright>Copyright (c) 2026 Károly Akácz</Copyright>
+      <PackageTags>chainofresponsibility;chain;handler;pipeline;middleware;result;resultkit;fluent;diagnostics;dependency-injection;di</PackageTags>
+      <PackageProjectUrl>https://github.com/akikari/Fox.ChainKit</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/akikari/Fox.ChainKit</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <PackageIcon>icon.png</PackageIcon>
+      <PackageOutputPath>..\..\artifacts</PackageOutputPath>
+
+      <DebugType>portable</DebugType>
+      <IncludeSymbols>true</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <EmbedAllSources>true</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <Using Include="System" />
+      <Using Include="System.Collections.Generic" />
+      <Using Include="System.Threading" />
+      <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="\" />
+      <None Include="..\..\assets\icon.png" Pack="true" PackagePath="\" />
+      <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

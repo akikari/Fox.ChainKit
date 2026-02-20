@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 512 512"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1E1E1E"/>
+
+  <!-- Chain links + center line -->
+  <g fill="none" stroke="#E5E5E5" stroke-width="32">
+
+    <!-- Left link -->
+    <rect x="70" y="200" width="160" height="110"
+          rx="50" ry="50"/>
+
+    <!-- Right link -->
+    <rect x="290" y="200" width="160" height="110"
+          rx="50" ry="50"/>
+
+    <!-- Center rounded line -->
+    <line x1="190" y1="255" x2="330" y2="255"
+          stroke-linecap="round"/>
+  </g>
+
+</svg>

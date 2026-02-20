@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+      <Version>1.0.0</Version>
+      <IsPackable>true</IsPackable>
+      <AssemblyName>Fox.ChainKit.ResultKit</AssemblyName>
+      <RootNamespace>Fox.ChainKit.ResultKit</RootNamespace>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <LangVersion>latest</LangVersion>
+
+      <PackageId>Fox.ChainKit.ResultKit</PackageId>
+      <Authors>Károly Akácz</Authors>
+      <Company>Fox</Company>
+      <Product>Fox.ChainKit.ResultKit</Product>
+      <Description>Result pattern integration for Fox.ChainKit. Enables seamless use of Fox.ResultKit with chain handlers, providing automatic conversion between Result and HandlerResult types with full diagnostics support.</Description>
+      <Copyright>Copyright (c) 2026 Károly Akácz</Copyright>
+      <PackageTags>chainofresponsibility;chain;handler;result;resultkit;fox;fluent;diagnostics;fox-chainkit</PackageTags>
+      <PackageProjectUrl>https://github.com/akikari/Fox.ChainKit</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/akikari/Fox.ChainKit</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <PackageIcon>icon.png</PackageIcon>
+      <PackageOutputPath>..\..\artifacts</PackageOutputPath>
+
+      <DebugType>portable</DebugType>
+      <IncludeSymbols>true</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <EmbedAllSources>true</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <Using Include="System" />
+      <Using Include="System.Threading" />
+      <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="\" />
+      <None Include="..\..\assets\icon.png" Pack="true" PackagePath="\" />
+      <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\Fox.ChainKit\Fox.ChainKit.csproj" />
+      <PackageReference Include="Fox.ResultKit" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
