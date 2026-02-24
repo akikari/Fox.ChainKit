@@ -102,4 +102,34 @@ public sealed class ResultDiagnosticsTests
 
         summary.Should().Contain("Result handlers:");
     }
+
+    //==============================================================================================
+    /// <summary>
+    /// Tests that FormatResultDiagnostics returns message for empty chain.
+    /// </summary>
+    //==============================================================================================
+    [Fact]
+    public void FormatResultDiagnostics_should_return_message_for_empty_chain()
+    {
+        var diagnostics = new ChainDiagnostics();
+
+        var summary = diagnostics.FormatResultDiagnostics();
+
+        summary.Should().Be("No handlers in chain.");
+    }
+
+    //==============================================================================================
+    /// <summary>
+    /// Tests that FormatResultDiagnostics throws for null diagnostics.
+    /// </summary>
+    //==============================================================================================
+    [Fact]
+    public void FormatResultDiagnostics_should_throw_for_null_diagnostics()
+    {
+        ChainDiagnostics diagnostics = null!;
+
+        var act = () => diagnostics.FormatResultDiagnostics();
+
+        act.Should().Throw<ArgumentNullException>();
+    }
 }

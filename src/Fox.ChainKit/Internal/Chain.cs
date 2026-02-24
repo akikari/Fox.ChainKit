@@ -77,8 +77,8 @@ internal sealed class Chain<TContext>(IServiceProvider serviceProvider, List<Han
                 {
                     if (diagnostics != null)
                     {
-                        stopwatch?.Stop();
-                        diagnostics.Handlers.Add(new HandlerDiagnostics(HandlerName: descriptor.HandlerType.Name, ExecutionTime: stopwatch?.Elapsed ?? TimeSpan.Zero, HasException: true, ExceptionMessage: ex.Message));
+                        stopwatch!.Stop();
+                        diagnostics.Handlers.Add(new HandlerDiagnostics(HandlerName: descriptor.HandlerType.Name, ExecutionTime: stopwatch.Elapsed, HasException: true, ExceptionMessage: ex.Message));
                     }
 
                     if (exceptionHandler != null)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+    <DataCollectionRunSettings>
+        <DataCollectors>
+            <DataCollector friendlyName="XPlat code coverage">
+                <Configuration>
+                    <Format>cobertura</Format>
+                    <Exclude>
+                        [*]System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute
+                        [*]System.CodeDom.Compiler.GeneratedCodeAttribute
+                        [*]System.Runtime.CompilerServices.CompilerGeneratedAttribute
+                    </Exclude>
+                    <ExcludeByFile>
+                        **/obj/**
+                        **/bin/**
+                        **/*.Designer.cs
+                        **/AssemblyInfo.cs
+                        **/GlobalSuppressions.cs
+                    </ExcludeByFile>
+                    <IncludeDirectory>src</IncludeDirectory>
+                </Configuration>
+            </DataCollector>
+        </DataCollectors>
+    </DataCollectionRunSettings>
+</RunSettings>

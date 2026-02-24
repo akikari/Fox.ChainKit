@@ -42,13 +42,17 @@ jobs:
     - name: Run tests
       run: dotnet test --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
+    - name: Run tests with coverage (net8.0 only for Codecov)
+      if: matrix.os == 'ubuntu-latest' && matrix.dotnet-version == '8.0.x'
+      run: dotnet test --configuration Release --framework net8.0 --collect:"XPlat Code Coverage" --settings coverlet.runsettings --results-directory ./coverage-report
+
     - name: Upload coverage to Codecov
       if: matrix.os == 'ubuntu-latest' && matrix.dotnet-version == '8.0.x'
       uses: codecov/codecov-action@v4
       with:
-        files: '**/coverage.cobertura.xml'
+        files: './coverage-report/**/coverage.cobertura.xml'
         flags: unittests
-        fail_ci_if_error: false
+        fail_ci_if_error: true
 
   pack-validation:
     name: Pack Validation

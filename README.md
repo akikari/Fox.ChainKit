@@ -5,6 +5,7 @@
 [![NuGet](https://img.shields.io/nuget/v/Fox.ChainKit.svg)](https://www.nuget.org/packages/Fox.ChainKit/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Fox.ChainKit?label=downloads&color=darkgreen)](https://www.nuget.org/packages/Fox.ChainKit/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-orange.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://img.shields.io/codecov/c/github/akikari/Fox.ChainKit?color=darkgreen&label=codecov)](https://codecov.io/gh/akikari/Fox.ChainKit)
 
 A lightweight, DI-friendly, modular Chain of Responsibility framework for .NET.
 
