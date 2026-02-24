@@ -33,7 +33,6 @@ This file is automatically imported by every .csproj file in the solution.
         <PackageProjectUrl>https://github.com/akikari/Fox.ChainKit</PackageProjectUrl>
         <RepositoryUrl>https://github.com/akikari/Fox.ChainKit</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <IncludeSymbols>true</IncludeSymbols>
