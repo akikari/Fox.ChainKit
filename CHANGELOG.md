@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _No unreleased changes yet._
 
+## [1.0.1] - 2026-03-02
+
+### Fixed
+- XML Documentation in NuGet Packages - XML documentation files are now properly included in NuGet packages, enabling IntelliSense support for all public APIs when consuming the packages
+- Package License Configuration - Removed conflicting `PackageLicenseExpression` from `Directory.Build.props` (packages use `PackageLicenseFile` instead)
+
 ## [1.0.0] - 2026-02-20
 
 ### Added
@@ -26,6 +32,13 @@ _No unreleased changes yet._
 - Zero reflection overhead (factory-based handler resolution)
 - Full dependency injection integration
 - XML documentation for all public APIs
+- 100% Code Coverage - Achieved 100% line and branch coverage for both Fox.ChainKit and Fox.ChainKit.ResultKit
+  - Added 11 defensive code tests (total: 41 tests, previously 30)
+  - Added `InternalsVisibleTo` for test projects to enable internal API testing
+  - Added `coverlet.runsettings` for optimized coverage measurement
+- Codecov Integration - Added Codecov badge and automated coverage reporting to CI/CD pipeline
+- Build Optimization - Added .NET 10 to CI/CD build matrix for comprehensive multi-version testing
+- README - Added Codecov badge showing 100% coverage achievement
 
 #### Fox.ChainKit.ResultKit (Integration Package)
 - ResultKit integration for Railway Oriented Programming
