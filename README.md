@@ -9,6 +9,29 @@
 
 A lightweight, DI-friendly, modular Chain of Responsibility framework for .NET.
 
+## 📋 Table of Contents
+
+- [Why Fox.ChainKit?](#why-foxchainkit)
+- [Packages](#packages)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Use Cases](#use-cases)
+- [Performance](#performance)
+- [Comparison](#comparison)
+- [Sample Application](#sample-application)
+- [Documentation](#documentation)
+- [Design Principles](#design-principles)
+- [Requirements](#requirements)
+- [Real-World Example](#real-world-example)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+- [Project Status](#project-status)
+- [Related Projects](#related-projects)
+- [Support](#support)
+
 ## Why Fox.ChainKit?
 
 Fox.ChainKit provides a clean, efficient implementation of the Chain of Responsibility pattern that integrates seamlessly with modern .NET applications:
@@ -327,6 +350,10 @@ dotnet run
 - C# 12 or higher (for modern language features)
 - Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0 or higher
 - Nullable reference types enabled (recommended)
+
+## 🎯 Real-World Example
+
+See this package in action within a complete production-grade application: **[Fox.TaskFlow](https://github.com/akikari/Fox.TaskFlow)** - A comprehensive demonstration showcasing real-world integration of seven Fox.*Kit packages in a task management system built with Clean Architecture, SOLID principles, and modern .NET 10 practices.
 
 ## 🤝 Contributing
 
